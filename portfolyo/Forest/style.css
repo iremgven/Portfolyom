@@ -1,0 +1,42 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    min-height: 100vh;
+    font-family: "Poppins", sans-serif;
+    overflow-x: hidden;
+    scroll-behavior: smooth;
+}
+
+.main {
+    min-width: 100vw;
+    min-height: 100vh;
+}
+
+#arrowup {
+    position: fixed;
+    top: 90%;
+    right: 5%;
+    color: green;
+    font-size: 2rem;
+    padding: 5px 10px;
+    border: 3px solid green;
+    border-radius: 50%;
+}
+
+#arrowup:hover {
+    animation: arrowbumb 0.5s infinite alternate;
+}
+
+@keyframes arrowbumb {
+    0% {
+        transform: translateY(20px);
+    }
+
+    100% {
+        transform: translateY(0px);
+    }
+}

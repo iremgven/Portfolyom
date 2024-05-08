@@ -1,0 +1,124 @@
+/* kendi frameworkümüzü css de bu şekilde oluşturabilriz */
+
+/* :root{
+    --birinciRenk : red;
+    --font : 30px;
+    --borderım: 5px dashed yellow;
+    --width: 200px;
+    --yükseklik: 300px;
+
+}
+
+body{
+    background-color: var(--birinciRenk);
+} */
+
+
+/* ----------------------------------- */
+
+:root {
+    --birinciRenk: #7b9ce2;
+    --ikinciRenk: #fff;
+    --darkColor: #18191a;
+    --kırmızıRenk: #d4a7e4;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: var(--birinciRenk);
+}
+
+body.dark {
+    --birinciRenk: #05112c;
+    --ikinciRenk: #baecc8;
+    --darkColor: #fff;
+    --kırmızıRenk: red;
+}
+
+.container {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    gap: 50px;
+}
+
+
+.clock {
+    display: flex;
+    height: 400px;
+    width: 400px;
+    background: var(--ikinciRenk);
+    border-radius: 50%;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+}
+
+.clock label {
+    position: absolute;
+    transform: rotate(calc(var(--i) * (360deg / 12)));
+    inset: 20px;
+    text-align: center;
+    font-size: 1.5rem;
+}
+
+.indicator{
+    position: absolute;
+    height: 15px;
+    width: 15px;
+    display: flex;
+    justify-content: center;
+}
+.indicator::before{
+    content: "";
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    z-index: 20;
+    background-color: var(--darkColor);
+    border: 4px solid var(--kırmızıRenk);
+    border-radius: 50%;
+
+}
+
+.hand{
+    position: absolute;
+    height: 130px;
+    width: 4px;
+    background: var(--kırmızıRenk);
+    bottom: 0;
+    border-radius: 25px;
+    transform-origin: bottom;
+}
+
+.minute{
+    height: 120px;
+    width: 5px;
+    background: var(--darkColor);
+    transform: rotate(45deg);
+    
+}
+
+.hour{
+    height: 100px;
+    width: 8px;
+    background-color: var(--darkColor);
+    transform: rotate(65deg);
+}
+
+.switchBtn{
+    padding: 10px 20px;
+    background: var(--darkColor);
+    color: var(--kırmızıRenk);
+    border-radius: 0.5rem;
+    cursor: pointer;
+}

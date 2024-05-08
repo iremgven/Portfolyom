@@ -1,0 +1,587 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- font awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css"
+        integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <!-- CSS -->
+    <link rel="stylesheet" href="assets/css/style.css">
+    <title>Portfolyo</title>
+</head>
+
+<body class="main">
+    <!-- stil değiştirici -->
+    <input type="radio" name="color" id="color-1">
+    <input type="radio" name="color" id="color-2">
+    <input type="radio" name="color" id="color-3">
+    <input type="radio" name="color" id="color-4">
+    <input type="radio" name="color" id="color-5">
+    <input type="radio" name="color" id="color-6">
+    <input type="radio" name="color" id="color-7">
+    <input type="radio" name="color" id="color-8">
+    <input type="radio" name="color" id="color-9">
+    <input type="radio" name="color" id="color-10">
+    <input type="checkbox" id="toggler">
+    <input type="checkbox" id="day-night">
+
+    <div class="style__switcher">
+        <label for="toggler" class="style__switcher-toggler">
+            <i class="fa-solid fa-gear fa-spin"></i>
+        </label>
+
+        <label for="day-night" class="style__switcher-theme">
+            <i class="fa-solid fa-sun"></i>
+            <i class="fa-solid fa-moon"></i>
+        </label>
+
+        <h3 class="style__switcher-title">Tema</h3>
+
+        <div class="style__switcher-colors">
+            <label for="color-1" class="color-1 color"></label>
+            <label for="color-2" class="color-2 color"></label>
+            <label for="color-3" class="color-3 color"></label>
+            <label for="color-4" class="color-4 color"></label>
+            <label for="color-5" class="color-5 color"></label>
+            <label for="color-6" class="color-6 color"></label>
+            <label for="color-7" class="color-7 color"></label>
+            <label for="color-8" class="color-8 color"></label>
+            <label for="color-9" class="color-9 color"></label>
+            <label for="color-10" class="color-10 color"></label>
+        </div>
+    </div>
+
+    <!-- header navbar -->
+    <header class="header">
+        <nav class="nav container">
+            <a href="index.html" class="nav__logo">İrem Elif Güven</a>
+
+
+            <input type="checkbox" id="nav-toggler">
+
+            <label for="nav-toggler" class="nav__toggle">
+                <i class="fa-solid fa-bars"></i>
+            </label>
+            <ul class="nav__list">
+                <li class="nav__item">
+                    <a href="#home" class="nav__link active-link">Anasayfa</a>
+                </li>
+                <li class="nav__item">
+                    <a href="#about" class="nav__link">Hakkımda</a>
+                </li>
+
+                <li class="nav__item">
+                    <a href="#qualification" class="nav__link">Eğitim</a>
+                </li>
+                <li class="nav__item">
+                    <a href="#services" class="nav__link">Hizmet</a>
+                </li>
+                <li class="nav__item">
+                    <a href="#works" class="nav__link">Projeler</a>
+                </li>
+                <li class="nav__item">
+                    <a href="#contact" class="nav__link">İletişim</a>
+                </li>
+            </ul>
+        </nav>
+    </header>
+
+    <main class="main">
+        <!-- anasayfa -->
+        <section class="home" id="home">
+            <div class="home__container container grid">
+                <div class="home__content">
+                    <span class="home__small">Merhaba</span>
+                    <h1 class="home__title"><span>Ben,</span> İrem Elif Güven <br> bir <span class="typing"> Yazılım
+                            Geliştiricisiyim</span>
+                    </h1>
+                    <p class="home__description">Matematik bölümü mezunuyum.Matematik eğitimim sırasında analitik
+                        düşünmenin yazılım alanında nasıl uygulanabileceğini gördüm. Ayrıca, matematik eğitimi detaylara
+                        önem verme alışkanlığı kazandırdı ve yazılım projelerindeki hataları bulmak ve düzeltmek için
+                        detaylara dikkat etmem gerektiğini öğretti. Bu sayede, yazılım geliştirme sürecinde daha etkili
+                        ve verimli bir şekilde çalışabiliyorum. Yazılımın sunduğu sonsuz olanaklar ve
+                        sürekli gelişen doğası beni heyecanlandırıyor. Bu akış içinde kendimi bulmak, her
+                        gün yeni bir şey öğrenmek ve bu bilgiyi uygulamak iyi hissettiriyor.</p>
+                    <div class="home__btns">
+                        <a href="#contact" class="btn">Beni işe al</a>
+                        <a href="#about" class="btn btn--transparent">Portfolyo</a>
+                    </div>
+                </div>
+                <div class="home__img-wrapper">
+                    <img src="assets/img/home.png" alt="" class="home__img">
+                </div>
+            </div>
+        </section>
+
+        <!-- hakkımda -->
+        <section class="about section" id="about">
+            <div class="about__container container grid">
+                <div class="about__img-wrapper">
+                    <img src="assets/img/about2.jpeg" alt="" class="about__img">
+                    <img src="assets/img/about2.jpeg" alt="" class="about__img">
+                    <img src="assets/img/about2.jpeg" alt="" class="about__img">
+                    <img src="assets/img/about2.jpeg" alt="" class="about__img">
+                </div>
+
+                <div class="about__content">
+                    <h2 class="section__title" data-title="Ben kimim? "> Ben İrem Elif Güven, Web Geliştiricisiyim</h2>
+                    <p class="about__description">Karabük Üniversitesi Fen Fakültesi Matematik Bölümü'nden mezun oldum.
+                        Matematik alanındaki eğitimimden sonra yazılım dünyasına adım attım ve Neos Yazılım Akademide
+                        full
+                        stack kursu aldım. Şu anda web geliştirme alanında çalışıyorum. Sürekli öğrenmeye ve kendimi
+                        geliştirmeye büyük bir tutkuyla bağlıyım. Teknolojinin sunduğu imkanları kullanarak yenilikçi
+                        çözümler üretmek beni heyecanlandırıyor.</p>
+
+                    <ul class="about__data grid">
+                        <li class="data__item">
+                            <h3 class="data__title">Doğum Tarihi:</h3>
+                            <span class="data_description">03.01.2001</span>
+                        </li>
+
+                        <li class="data__item">
+                            <h3 class="data__title">Doğum Yeri:</h3>
+                            <span class="data_description">Yenimahalle/Ankara</span>
+                        </li>
+
+                        <li class="data__item">
+                            <h3 class="data__title">Uyruk:</h3>
+                            <span class="data_description">TC</span>
+                        </li>
+
+                        <li class="data__item">
+                            <h3 class="data__title">Lise:</h3>
+                            <span class="data_description">İbn-i Sina Anadolu Lisesi</span>
+                        </li>
+
+                        <li class="data__item">
+                            <h3 class="data__title">Üniversite:</h3>
+                            <span class="data_description">Karabük Üniversitesi</span>
+                        </li>
+
+                        <li class="data__item">
+                            <h3 class="data__title">Bölüm:</h3>
+                            <span class="data_description">Matematik</span>
+                        </li>
+
+                        <li class="data__item">
+                            <h3 class="data__title">Şehir:</h3>
+                            <span class="data_description ">Yenimahalle/Ankara</span>
+                        </li>
+
+                        <li class="data__item">
+                            <h3 class="data__title">Email:</h3>
+                            <span class="data_description about__link">iremgven10@gmail.com</span>
+                        </li>
+
+
+                    </ul>
+
+                    <div class="about__button">
+                        <a href="" class="btn">CV İndir</a>
+
+                        <div class="about__social--links">
+                            <a href="https://www.linkedin.com/in/irem-g%C3%BCven-b3356b270/"
+                                class="about__social-link"><i class="fa-brands fa-linkedin-in"></i></a>
+
+                            <a href="https://github.com/iremgven" class="about__social-link"><i
+                                    class="fa-brands fa-github"></i></a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- eğitim ve sertifikalar -->
+        <section class="qualification section" id="qualification">
+            <h2 class="section__title title-center" data-title="Benim yolculuğum ">Eğitim</h2>
+            <div class="resume__container container grid">
+                <div class="resume__group">
+                    <h3 class="resume__heading">Eğitim</h3>
+
+                    <div class="resume_items">
+                        <div class="resume__item">
+                            <div class="resume__header">
+                                <h3 class="resume_subtitle"></h3>
+                                <span class="resume_icon">+</span>
+                            </div>
+                            <div class="resume__content">
+                                <div class="resume__date-title">
+                                    <h3 class="resume-title">İbn-i Sina Anadolu Lisesi</h3>
+                                    <span class="resume__date">2015 - 2019</span>
+                                </div>
+                                <p class="resume__description">Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+                                    Id
+                                    repellat et at officia, ipsam inventore molestiae eius modi, reprehenderit fugiat
+                                    unde
+                                    adipisci corporis incidunt itaque, placeat eos facilis ad dolores!</p>
+                            </div>
+                        </div>
+
+                        <div class="resume__item">
+                            <div class="resume__header">
+                                <h3 class="resume_subtitle">Karabük Üniversitesi</h3>
+                                <span class="resume_icon">-</span>
+                            </div>
+                            <div class="resume__content">
+                                <div class="resume__date-title">
+                                    <h3 class="resume-title"> Matematik</h3>
+                                    <span class="resume__date">2019 - 2024</span>
+                                </div>
+                                <p class="resume__description">Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+                                    Id
+                                    repellat et at officia, ipsam inventore molestiae eius modi, reprehenderit fugiat
+                                    unde
+                                    adipisci corporis incidunt itaque, placeat eos facilis ad dolores!</p>
+                            </div>
+                        </div>
+
+                        <div class="resume__item">
+                            <div class="resume__header">
+                                <h3 class="resume_subtitle"> Anadolu Üniversitesi</h3>
+                                <span class="resume_icon">-</span>
+                            </div>
+                            <div class="resume__content">
+                                <div class="resume__date-title">
+                                    <h3 class="resume-title">Web Tasarım ve Kodlama </h3>
+                                    <span class="resume__date">2020 - 2022</span>
+                                </div>
+                                <p class="resume__description">Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+                                    Id
+                                    repellat et at officia, ipsam inventore molestiae eius modi, reprehenderit fugiat
+                                    unde
+                                    adipisci corporis incidunt itaque, placeat eos facilis ad dolores!</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="resume__group">
+                    <h3 class="resume__heading">Sertifika</h3>
+
+                    <div class="resume_items">
+                        <div class="resume__item">
+                            <div class="resume__header">
+                                <h3 class="resume_subtitle">Neos Yazılım Akademi </h3>
+                                <span class="resume_icon">+</span>
+                            </div>
+                            <div class="resume__content">
+                                <div class="resume__date-title">
+                                    <h3 class="resume-title">FullStack Yazılım Kursu</h3>
+                                    <span class="resume__date">2024</span>
+                                </div>
+                                <p class="resume__description">Lorem ipsum dolor sit amet consectetur, adipisicing elit.
+                                    Quae repellendus officiis minus, deserunt sed fugiat? Lorem ipsum</p>
+                            </div>
+                        </div>
+
+                        <!-- <div class="resume__item">
+                        <div class="resume__header">
+                            <h3 class="resume_subtitle">--</h3>
+                            <span class="resume_icon">-</span>
+                        </div>
+                        <div class="resume__content">
+                            <div class="resume__date-title">
+                                <h3 class="resume-title">--</h3>
+                                <h3 class="resume-title">--</h3>
+                                <span class="resume__date">date</span>
+                            </div>
+                            <p class="resume__description">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Id
+                                repellat et at officia, ipsam inventore molestiae eius modi, reprehenderit fugiat unde
+                                adipisci corporis incidunt itaque, placeat eos facilis ad dolores!</p>
+                        </div>
+                    </div> -->
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- hizmet -->
+        <section class="services section" id="services">
+            <h2 class="section__title title-center" data-title="Hizmet">Sizin için ne yapabilirim?</h2>
+
+            <div class="services__container container grid">
+                <div class="services__item">
+                    <i class="fa-solid fa-pen-to-square services__icon"></i>
+
+                    <h3 class="services__title">UI/UX Design</h3>
+                    <p class="services__description">
+                        Kullanıcı dostu ve etkili arayüzler oluşturabilme becerisi. Kullanıcı deneyimini iyileştirmek
+                        için
+                        temel UI/UX prensiplerine hakim olmak.
+                    </p>
+
+                    <span class="services__no">01</span>
+                </div>
+
+
+                <div class="services__item">
+                    <i class="fa-solid fa-display services__icon"></i>
+
+                    <h3 class="services__title">HTML/CSS/JavaScript Bilgisi</h3>
+                    <p class="services__description">
+                        Temel web teknolojilerine hakim olmak ve bunları kullanarak kullanıcı arayüzlerini
+                        geliştirebilmek.
+                    </p>
+
+                    <span class="services__no">02</span>
+                </div>
+
+                <div class="services__item">
+                    <i class="fa-solid fa-display services__icon"></i>
+
+                    <h3 class="services__title">Frontend ve Backend Frameworkleri</h3>
+                    <p class="services__description">
+                        React ve Django frameworklerinde ileri seviyede bilgili olmak.
+                    </p>
+
+                    <span class="services__no">03</span>
+                </div>
+
+                <div class="services__item">
+                    <i class="fa-solid fa-mobile-screen-button services__icon"></i>
+
+                    <h3 class="services__title">Responsive Design</h3>
+                    <p class="services__description">
+                        Mobil cihazlarda ve farklı ekran boyutlarında iyi çalışan tasarımlar oluşturabilmek.
+                    </p>
+
+                    <span class="services__no">04</span>
+                </div>
+
+                <div class="services__item">
+                    <i class="fa-solid fa-computer services__icon"></i>
+
+                    <h3 class="services__title">Cross-Browser Uyumlu Tasarım</h3>
+                    <p class="services__description">
+                        Farklı web tarayıcılarında (Chrome, Firefox, Safari, Edge vb.) tutarlı bir görünüm ve
+                        işlevsellik
+                        sağlayabilmek.
+                    </p>
+
+                    <span class="services__no">05</span>
+                </div>
+
+                <div class="services__item">
+                    <i class="fa-solid fa-people-carry-box services__icon"></i>
+
+                    <h3 class="services__title">İletişim ve İşbirliği</h3>
+                    <p class="services__description">
+                        Proje ekibiyle ve diğer paydaşlarla etkili iletişim kurabilmek ve işbirliği yapabilmek.
+                    </p>
+
+                    <span class="services__no">06</span>
+                </div>
+            </div>
+        </section>
+
+        <!-- yetenekler -->
+        <section class="skills section">
+            <h2 class="section__title title-center" data-title="Yeteneklerim">Profesyonel Yetenekler</h2>
+            <div class="skills padd">
+                <div class="row">
+                    <div class="skill-item padd-15">
+                        <h5>HTML5</h5>
+                        <div class="progress">
+                            <div class="progress-in" style="width: 95%;"></div>
+                            <div class="skills-percent">95%</div>
+                        </div>
+                    </div>
+
+                    <div class="skill-item padd-15">
+                        <h5>CSS</h5>
+                        <div class="progress">
+                            <div class="progress-in" style="width: 87%;"></div>
+                            <div class="skills-percent">87%</div>
+                        </div>
+                    </div>
+
+                    <div class="skill-item padd-15">
+                        <h5>BOOTSTRAP</h5>
+                        <div class="progress">
+                            <div class="progress-in" style="width: 80%;"></div>
+                            <div class="skills-percent">80%</div>
+                        </div>
+                    </div>
+
+                    <div class="skill-item padd-15">
+                        <h5>JavaScript</h5>
+                        <div class="progress">
+                            <div class="progress-in" style="width: 85%;"></div>
+                            <div class="skills-percent">85%</div>
+                        </div>
+                    </div>
+
+                    <div class="skill-item padd-15">
+                        <h5>React</h5>
+                        <div class="progress">
+                            <div class="progress-in" style="width: 85%;"></div>
+                            <div class="skills-percent">85%</div>
+                        </div>
+                    </div>
+
+                    <div class="skill-item padd-15">
+                        <h5>PYTHON</h5>
+                        <div class="progress">
+                            <div class="progress-in" style="width: 70%;"></div>
+                            <div class="skills-percent">70%</div>
+                        </div>
+                    </div>
+
+                    <div class="skill-item padd-15">
+                        <h5>DJANGO</h5>
+                        <div class="progress">
+                            <div class="progress-in" style="width: 70%;"></div>
+                            <div class="skills-percent">70%</div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- projeler -->
+        <section class="works" id="works">
+            <h2 class="section__title title-center" data-title="Projelerim">Yaptığım Projeler</h2>
+
+            <div class="work__container container grid">
+                <div class="work__card">
+                    <img src="assets/img/netflix.jpg" alt="" class="work__img">
+                    <div class="work__details">
+                        <h3 class="work__title">Netflix</h3>
+                        <span class="work__description"> </span>
+                    </div>
+                </div>
+
+                <div class="work__card">
+                    <img src="assets/img/havadurumu.jpg" alt="" class="work__img">
+                    <div class="work__details">
+                        <h3 class="work__title">Hava Durumu</h3>
+                        <span class="work__description"></span>
+                    </div>
+                </div>
+
+                <div class="work__card">
+                    <img src="assets/img/forest.jpg" alt="" class="work__img">
+                    <div class="work__details">
+                        <h3 class="work__title">Konaklama Web Sitesi</h3>
+                        <span class="work__description"></span>
+                    </div>
+                </div>
+
+                <div class="work__card">
+                    <img src="assets/img/art.jpg" alt="" class="work__img">
+                    <div class="work__details">
+                        <h3 class="work__title">Art Gallery Web Sitesi</h3>
+                        <span class="work__description"></span>
+                    </div>
+                </div>
+
+
+                <div class="work__card">
+                    <img src="assets/img/pizza.jpg" alt="" class="work__img">
+                    <div class="work__details">
+                        <h3 class="work__title">Restaurant Web Sitesi</h3>
+                        <span class="work__description"></span>
+                    </div>
+                </div>
+
+
+
+                <div class="work__card">
+                    <img src="assets/img/saat.jpg" alt="" class="work__img">
+                    <div class="work__details">
+                        <h3 class="work__title">Analog Saat</h3>
+                        <span class="work__description"></span>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- iletişim -->
+        <section class="contact section" id="contact">
+            <h2 class="section__title title-center" data-title="İstek ve ihtiyaçlarınız için">Bana Ulaşın</h2>
+
+            <div class="contact__container container grid">
+                <div class="contact__details">
+                    <div class="contact__item">
+                        <i class="fa-solid fa-phone contact__icon"></i>
+
+                        <div>
+                            <h3 class="contact__title">Telefon</h3>
+                            <span class="contact__data">+90 544 410 7696</span>
+                        </div>
+                    </div>
+
+                    <div class="contact__item">
+                        <i class="fa-solid fa-location-dot contact__icon"></i>
+
+                        <div>
+                            <h3 class="contact__title">Konum</h3>
+                            <span class="contact__data">Yenimahalle/ANKARA</span>
+                        </div>
+                    </div>
+
+                    <div class="contact__item">
+                        <i class="fa-solid fa-envelope contact__icon"></i>
+
+                        <div>
+                            <h3 class="contact__title">Email</h3>
+                            <span class="contact__data">iremgven10@gmail.com</span>
+                        </div>
+                    </div>
+                </div>
+
+                <form action="" class="contact__form">
+                    <div class="form__group">
+                        <div class="form__input">
+                            <input type="text" placeholder="İsim Soyisim" class="input__control" required>
+                        </div>
+
+                        <div class="form__input">
+                            <input type="email" placeholder="Email" class="input__control" required>
+                        </div>
+                    </div>
+                    <div class="form__input">
+                        <input type="text" placeholder="Konu" class="input__control" required>
+                    </div>
+
+                    <div class="form__input">
+                        <textarea name="" id="" placeholder="Mesaj" cols="30" rows="10" class="input__control textarea"
+                            required></textarea>
+                    </div>
+
+                    <button class="btn contact__btn">Mesaj Gönder</button>
+                </form>
+            </div>
+        </section>
+
+        <!-- footer -->
+        <footer class="footer">
+            <div class="footer__container container">
+                <p class="footer__copyright"> © 2024 İrem Elif Güven. Tüm Hakları Saklıdır</p>
+                <div class="footer__social-links">
+                    <a href="https://www.linkedin.com/in/irem-g%C3%BCven-b3356b270/" class="footer__social-links"><i
+                            class="fa-brands fa-linkedin-in"></i></a>
+
+                    <a href="https://github.com/iremgven" class="footer__social-links"><i
+                            class="fa-brands fa-github"></i></a>
+
+                    <a href="" class="footer__social-links"><i class="fa-brands fa-instagram"></i></a>
+
+                    <a href="" class="footer__social-links"><i class="fa-brands fa-x-twitter"></i></a>
+                </div>
+            </div>
+        </footer>
+    </main>
+
+
+    <!-- JS link -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/typed.js/2.1.0/typed.umd.js"
+        integrity="sha512-+2pW8xXU/rNr7VS+H62aqapfRpqFwnSQh9ap6THjsm41AxgA0MhFRtfrABS+Lx2KHJn82UOrnBKhjZOXpom2LQ=="
+        crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <script src="assets/js/script.js"></script>
+</body>
+
+</html>
